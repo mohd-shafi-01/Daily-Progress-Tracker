@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Progress Tracker 2025</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/10610/10610572.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Progress Tracker 2025</h1>
+    <div class="container">
+      <script>
+        const months = [
+          "January",
+          "February",
+          "March",
+          "April",
+          "May",
+          "June",
+          "July",
+          "August",
+          "September",
+          "October",
+          "November",
+          "December",
+        ];
+
+        for (let monthIndex = 0; monthIndex < 12; monthIndex++) {
+          document.write(`
+              <div class="card">
+              <div class="day-label">${months[monthIndex]}</div>
+              <div class="calendar">`);
+
+          const daysInMonth = new Date(2025, monthIndex + 1, 0).getDate(); // Get the last day of the month
+
+          for (let day = 0; day < daysInMonth; day++) {
+            document.write(`
+                <div class="day ${months[monthIndex].toLowerCase()}-day-${
+              day + 1
+            }" id="day${monthIndex + 1}-${day + 1}"></div>`);
+          }
+
+          document.write(`</div></div>`); // Close the calendar and card div
+        }
+      </script>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
