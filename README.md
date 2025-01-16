@@ -15,9 +15,9 @@ A responsive web-based application to track your daily progress throughout the y
 
 ## Technologies Used
 
-- **HTML:** Structure of the application.
-- **CSS:** Styling for the calendar and layout.
-- **JavaScript:** Dynamic date generation and interactivity.
+- **HTML**: Structure of the application.
+- **CSS**: Styling for the calendar and layout.
+- **JavaScript**: Dynamic date generation and interactivity.
 
 ---
 
